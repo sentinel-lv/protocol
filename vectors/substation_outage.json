@@ -1,0 +1,91 @@
+{
+  "description": "All nodes collapse simultaneously -> substation outage veto",
+  "now_ms": 1757030400623,
+  "config": {
+    "collapse_threshold_pct": -60.0,
+    "sustain_cycles": 5,
+    "quorum_required": 2,
+    "quorum_window_ms": 1500,
+    "recovery_threshold_pct": -20.0,
+    "global_collapse_veto": true
+  },
+  "nodes": [
+    {
+      "node_id": "N-001",
+      "state": "SUSPECT",
+      "deviation_pct": -95.0,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-002",
+      "state": "SUSPECT",
+      "deviation_pct": -95.0,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-003",
+      "state": "SUSPECT",
+      "deviation_pct": -95.0,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-004",
+      "state": "SUSPECT",
+      "deviation_pct": -95.0,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-005",
+      "state": "SUSPECT",
+      "deviation_pct": -95.0,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-006",
+      "state": "SUSPECT",
+      "deviation_pct": -95.0,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-007",
+      "state": "SUSPECT",
+      "deviation_pct": -95.0,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-008",
+      "state": "SUSPECT",
+      "deviation_pct": -95.0,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-009",
+      "state": "SUSPECT",
+      "deviation_pct": -95.0,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-010",
+      "state": "SUSPECT",
+      "deviation_pct": -95.0,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-011",
+      "state": "SUSPECT",
+      "deviation_pct": -95.0,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-012",
+      "state": "SUSPECT",
+      "deviation_pct": -95.0,
+      "ts": 1757030400123
+    }
+  ],
+  "expected": {
+    "action": "NONE",
+    "fault_span": null,
+    "reason_contains": "global_collapse"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "description": "Break at tail: last two nodes collapse",
+  "now_ms": 1757030401123,
+  "config": {
+    "collapse_threshold_pct": -60.0,
+    "sustain_cycles": 5,
+    "quorum_required": 2,
+    "quorum_window_ms": 1500,
+    "recovery_threshold_pct": -20.0,
+    "global_collapse_veto": true
+  },
+  "nodes": [
+    {
+      "node_id": "N-001",
+      "state": "NORMAL",
+      "deviation_pct": -1.5,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-002",
+      "state": "NORMAL",
+      "deviation_pct": -1.5,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-003",
+      "state": "NORMAL",
+      "deviation_pct": -1.5,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-004",
+      "state": "NORMAL",
+      "deviation_pct": -1.5,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-005",
+      "state": "NORMAL",
+      "deviation_pct": -1.5,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-006",
+      "state": "NORMAL",
+      "deviation_pct": -1.5,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-007",
+      "state": "NORMAL",
+      "deviation_pct": -1.5,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-008",
+      "state": "NORMAL",
+      "deviation_pct": -1.5,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-009",
+      "state": "NORMAL",
+      "deviation_pct": -1.5,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-010",
+      "state": "NORMAL",
+      "deviation_pct": -1.5,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-011",
+      "state": "SUSPECT",
+      "deviation_pct": -85.0,
+      "ts": 1757030400123
+    },
+    {
+      "node_id": "N-012",
+      "state": "SUSPECT",
+      "deviation_pct": -87.0,
+      "ts": 1757030400423
+    }
+  ],
+  "expected": {
+    "action": "ISOLATE",
+    "fault_span": [
+      "N-010",
+      "N-011"
+    ]
+  }
+}
