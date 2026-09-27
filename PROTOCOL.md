@@ -8,7 +8,12 @@
 
 | Field | Format | Example |
 |-------|--------|---------|
-| `feeder_id` | `<UTILITY>-<SUBSTATION>-<FEEDER>` | `KSEB-TVM-F12` |
+| `feeder_id` | `<UTILITY>-<SUBSTATION>-<FEEDER>` | `SLV-TVM-F12` |
+
+The `<UTILITY>` segment names the operator of the feeder. The demo feeder uses
+`SLV` (Sentinel-LV, this system) rather than a real DISCOM code: no utility has
+adopted this, and putting one's identifier in the contract would imply otherwise.
+A deployment substitutes the adopting utility's own code.
 | `node_id` | `N-` + 3 digits, ascending downstream from the feeder head | `N-007` |
 | `ts` | Unix epoch milliseconds, integer, UTC | `1757030400123` |
 
@@ -52,7 +57,7 @@ cc/feeder/{feeder_id}/event
 ```json
 {
   "node_id": "N-007",
-  "feeder_id": "KSEB-TVM-F12",
+  "feeder_id": "SLV-TVM-F12",
   "ts": 1757030400123,
   "efield_rms": 4.82,
   "baseline": 4.90,
@@ -79,7 +84,7 @@ cc/feeder/{feeder_id}/event
 
 ```json
 {
-  "feeder_id": "KSEB-TVM-F12",
+  "feeder_id": "SLV-TVM-F12",
   "asserting_node": "N-007",
   "ts": 1757030400480,
   "votes": [
@@ -97,7 +102,7 @@ Quorum is evaluated over the nearest downstream neighbours. A break between `N-0
 
 ```json
 {
-  "feeder_id": "KSEB-TVM-F12",
+  "feeder_id": "SLV-TVM-F12",
   "action": "ISOLATE",
   "reason": "quorum_confirmed",
   "fault_span": ["N-006", "N-007"],
@@ -119,7 +124,7 @@ Quorum is evaluated over the nearest downstream neighbours. A break between `N-0
 ```json
 {
   "event_id": "evt_01J9X2K",
-  "feeder_id": "KSEB-TVM-F12",
+  "feeder_id": "SLV-TVM-F12",
   "type": "CONDUCTOR_BREAK",
   "ts_detected": 1757030400123,
   "ts_confirmed": 1757030400910,
