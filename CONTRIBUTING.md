@@ -78,6 +78,6 @@ Assign an owner to each. Rehearse the answers.
 | "Why not just use a smart meter?" | TBD — cost per point, no outage to install, works on unmetered spans |
 | "Who is liable if it trips wrongly?" | TBD — default ALERT_ONLY, utility opts into auto-isolation per feeder |
 | "What does one node cost at scale?" | TBD — BOM.csv |
-| "Has anyone from KSEBL seen this?" | TBD — be honest; describe the pilot you would propose |
+| "Has any utility actually seen this?" | TBD — be honest: none has. Self-proposed under Open Innovation; describe the pilot you would propose |
 
 The last one is a trap for teams that overclaim. Answer it straight.
